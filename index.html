@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIthub Favorites</title>
+  <link rel="icon" href="./assets/iconstar.svg">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="js/main.js" type="module" defer></script>
+
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1><img src="./assets/gitfav.svg" alt=""></h1>
+      <div class="search">
+        <label class="sr-only" for="input-search">Usuario do Github</label>
+        <input id="input-search" type="text" placeholder="Usuario do Github">
+        <button></button>
+      </div>
+    </header>
+    <div class="divtable">
+    <table>
+      <thead>
+        <tr>
+          <th>Usuario</th>          
+          <th>Repositorios</th>
+          <th>Seguidores</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <div class="empyt">
+          <img src="./assets/star.svg" alt="imaen de uma estrela">
+          <p>Nenhum favorito ainda</p>
+        </div>
+  
+      </tbody>
+      
+     </table>
+    </div>
+  </div>
+  
+</body>
+</html>

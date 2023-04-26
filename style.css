@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+  --ff-primary:'poppins',sans-serif;
+  --text-color:white;
+  --hue:194;
+  --primary-color:hsl(var(hue),100%,63%);
+}
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body{
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background: rgba(0, 0, 0, 1);
+}
+body *{
+  font-family: var(--ff-primary);
+}
+
+
+#app{
+  max-width: 1120px;
+  margin: 0 auto; 
+  padding: 2rem;
+  height: 60rem;
+  
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.5rem 0;
+}
+.search{
+  display: flex;
+  align-items: center;
+ 
+}
+.search input{
+  max-width: 64rem;
+  height:4rem ;
+  border-radius: .4rem;
+  padding: 0 .8rem;
+  background-color: #2F2F33;
+  border-bottom: none;
+  border-right: none;
+  margin-right: 3px;
+  color: #dfd5d5;
+}
+.search button{
+  height: 4rem;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 17rem;
+  background-color: black;
+  background-image: url("./assets/botao-add.svg");
+}
+
+.search button:hover{
+ 
+  background-image: url("./assets/botaoadd-hover.svg");
+  background-color: transparent;
+}
+
+table{
+width: 100%;
+border-collapse: collapse;
+
+}
+table *{
+  font-size: 1,4rem;
+  color: var(--text-color);
+}
+
+table th{
+  background-color:#2F2F33;
+  text-align: left;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+table th:first-child{
+  border-top-left-radius: 1rem;
+}
+
+table th:last-child{
+  border-top-right-radius: 1rem;
+}
+ .user{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  
+}
+.user img{
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.user a{
+   text-decoration: none;
+}
+.user a p{
+  font-weight: bold;
+}
+.remove{
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+table td{
+  padding: 1.5rem;
+  text-align: left;
+}
+
+ table tr{
+  height: 1.4rem;
+  border: #84979c 1px solid;
+}
+
+table tr:nth-child(even){
+  background:  #2F2F33;;
+}
+
+.divtable{
+  background: #151d1f;
+  border: #84979c 1px solid;
+  border-radius: 1rem;
+  height: 50rem;
+  overflow-x: auto;
+  position: relative;
+}
+
+.empyt{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  min-width: 40rem;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #84979c;
+  font-size: 1.8rem;
+  font-weight: bold
+}
+/* Largura da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track-piece {
+  background-color:transparent;
+}
+/* Cor do indicador de rolagem */
+::-webkit-scrollbar-thumb:vertical{
+  background-color: #576874;
+  border-radius: 40px;
+}
+/* Cor do indicador de rolagem - ao passar o mouse */
+::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #c4b9b9
+}
+
+@media(max-width:570px){
+  .search input{
+    max-width: 15rem;
+  }
+  header{
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+  }
+}
+
+
+
