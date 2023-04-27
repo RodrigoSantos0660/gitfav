@@ -52,7 +52,8 @@ header{
  
 }
 .search input{
-  max-width: 64rem;
+  width: 30rem;
+
   height:4rem ;
   border-radius: .4rem;
   padding: 0 .8rem;
@@ -184,7 +185,7 @@ table tr:nth-child(even){
   background-color: #c4b9b9
 }
 
-@media(max-width:570px){
+@media(max-width:740px){
   .search input{
     max-width: 15rem;
   }
